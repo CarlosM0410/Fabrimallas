@@ -1,0 +1,53 @@
+\
+/
+├── .git/                     # Directorio de Git para el control de versiones
+├── .next/                    # Directorio de build de Next.js (autogenerado)
+├── .vscode/                  # Configuraciones específicas de VSCode (si existe)
+├── app/                      # Directorio principal de la aplicación Next.js 13+ (App Router)
+│   ├── admin-panel/          # (Posible) Panel de administración
+│   ├── blog/                 # Sección del blog (listado y páginas individuales)
+│   ├── busqueda/             # Página de resultados de búsqueda
+│   ├── contacto/             # Página de contacto
+│   ├── nosotros/             # Sección "Nosotros" (empresa, equipo, proceso)
+│   ├── politica-garantia/    # Página de política de garantía
+│   ├── politica-privacidad/  # Página de política de privacidad
+│   ├── productos/            # Sección de productos (listado y páginas individuales)
+│   ├── proyectos/            # Sección de proyectos (listado y páginas individuales)
+│   ├── sectores/             # Páginas de sectores (construcción, industria, residencial)
+│   ├── terminos-condiciones/ # Página de términos y condiciones
+│   ├── layout.tsx            # Layout principal de la aplicación
+│   ├── page.tsx              # Página de inicio (Home)
+│   └── globals.css           # Estilos globales CSS (a menudo importados en layout.tsx)
+├── components/               # Componentes reutilizables de la interfaz de usuario (UI)
+│   ├── ui/                   # Componentes base de UI (posiblemente de shadcn/ui)
+│   ├── cta-banner.tsx        # Componente de banner Call-to-Action
+│   ├── footer.tsx            # Componente del pie de página
+│   ├── header.tsx            # Componente de la cabecera/navegación
+│   ├── product-card.tsx      # Tarjeta para mostrar un producto
+│   ├── project-card.tsx      # Tarjeta para mostrar un proyecto
+│   ├── search-bar.tsx        # Componente de barra de búsqueda
+│   ├── testimonial-card.tsx  # Tarjeta para mostrar un testimonio
+│   └── theme-provider.tsx    # Proveedor para gestionar temas (ej. claro/oscuro)
+├── hooks/                    # Hooks personalizados de React
+│   ├── use-mobile.tsx        # Hook para detectar si se está en un dispositivo móvil
+│   └── use-toast.ts          # Hook para gestionar notificaciones toast (shadcn/ui)
+├── lib/                      # Funciones de utilidad y lógica compartida
+│   └── utils.ts              # Funciones de utilidad generales (ej. cn de shadcn/ui)
+├── public/                   # Archivos estáticos servidos directamente
+│   ├── placeholder-logo.png  # Logo placeholder en formato PNG
+│   ├── placeholder-logo.svg  # Logo placeholder en formato SVG
+│   ├── placeholder-user.jpg  # Imagen de usuario placeholder
+│   ├── placeholder.jpg       # Imagen placeholder genérica
+│   └── placeholder.svg       # Imagen placeholder genérica en SVG
+├── styles/                   # Archivos de estilos (aunque globals.css está en app/)
+│   └── globals.css           # (Duplicado o versión diferente de app/globals.css?) - Revisar si es necesario
+├── node_modules/             # Dependencias del proyecto (gestionado por npm/yarn/pnpm)
+├── .gitignore                # Archivos y carpetas ignorados por Git
+├── components.json           # Configuración de componentes (probablemente shadcn/ui)
+├── next-env.d.ts             # Definiciones de tipos de TypeScript para Next.js (autogenerado)
+├── next.config.mjs           # Archivo de configuración de Next.js
+├── package.json              # Metadatos del proyecto y dependencias (npm/yarn/pnpm)
+├── pnpm-lock.yaml            # Lockfile de dependencias (pnpm)
+├── postcss.config.mjs        # Configuración de PostCSS (usado por Tailwind CSS)
+├── tailwind.config.ts        # Archivo de configuración de Tailwind CSS
+└── tsconfig.json             # Archivo de configuración de TypeScript 
