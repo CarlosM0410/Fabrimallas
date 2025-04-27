@@ -14,9 +14,9 @@ import { MapPin, Phone, Mail, Clock, CheckCircle } from "lucide-react"
 import { useEffect } from "react"
 
 export default function ContactoPage() {
-  const [contactPhone, setContactPhone] = useState("+57 (2) 123 4567")
-  const [contactEmail, setContactEmail] = useState("contacto@fabrimallas.com")
-  const [whatsappUrl, setWhatsappUrl] = useState("https://wa.me/573001234567")
+  const [contactPhone, setContactPhone] = useState("300 656 4547")
+  const [contactEmail, setContactEmail] = useState("fabrimallas2011@hotmail.com")
+  const [whatsappUrl, setWhatsappUrl] = useState("https://wa.me/573006564547")
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [formData, setFormData] = useState({
     nombre: "",
@@ -107,7 +107,7 @@ export default function ContactoPage() {
                       <MapPin className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                       <div>
                         <h3 className="font-bold mb-1">Dirección</h3>
-                        <p>Calle 123 #45-67, Cali, Valle del Cauca, Colombia</p>
+                        <p>Carrera 40 #42B-Esquina</p>
                       </div>
                     </div>
                   </CardContent>
@@ -118,7 +118,7 @@ export default function ContactoPage() {
                     <div className="flex items-start">
                       <Phone className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                       <div>
-                        <h3 className="font-bold mb-1">Teléfono</h3>
+                        <h3 className="font-bold mb-1">Teléfono / WhatsApp</h3>
                         <p>{contactPhone}</p>
                         <p className="mt-2">
                           <Button
@@ -159,9 +159,9 @@ export default function ContactoPage() {
                       <div>
                         <h3 className="font-bold mb-1">Horario de Atención</h3>
                         <p>
-                          Lunes a Viernes: 8:00 AM - 5:00 PM
+                          Lunes a Viernes: 8:00 AM - 5:30 PM
                           <br />
-                          Sábados: 8:00 AM - 12:00 PM
+                          Sábados: 8:00 AM - 12:30 PM
                         </p>
                       </div>
                     </div>
@@ -242,7 +242,7 @@ export default function ContactoPage() {
                         value={formData.telefono}
                         onChange={handleChange}
                         required
-                        placeholder="+57 300 123 4567"
+                        placeholder="300 656 4547"
                       />
                     </div>
                   </div>

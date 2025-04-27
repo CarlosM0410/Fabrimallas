@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button"
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 
 export default function Footer() {
-  const [contactPhone, setContactPhone] = useState("+57 (2) 123 4567")
-  const [contactEmail, setContactEmail] = useState("contacto@fabrimallas.com")
-  const [whatsappUrl, setWhatsappUrl] = useState("https://wa.me/573001234567")
+  const [contactPhone, setContactPhone] = useState("300 656 4547")
+  const [contactEmail, setContactEmail] = useState("fabrimallas2011@hotmail.com")
+  const [whatsappUrl, setWhatsappUrl] = useState("https://wa.me/573006564547")
 
   useEffect(() => {
     // Cargar datos del localStorage al montar el componente
@@ -69,6 +69,16 @@ export default function Footer() {
                 <Link href="/productos" className="text-neutral-light hover:text-white transition-colors">
                   Productos
                 </Link>
+              </li>
+              <li>
+                <a
+                  href="/Fabrimallas_Especificaciones_Sectores_v2.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral-light hover:text-white transition-colors"
+                >
+                  Guía de Especificaciones (PDF)
+                </a>
               </li>
               <li>
                 <Link href="/sectores" className="text-neutral-light hover:text-white transition-colors">
@@ -142,7 +152,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 text-primary" />
-                <span>Calle 123 #45-67, Cali, Valle del Cauca, Colombia</span>
+                <span>Carrera 40 #42B-Esquina</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-primary" />
@@ -157,9 +167,9 @@ export default function Footer() {
               <li className="flex items-start">
                 <Clock className="h-5 w-5 mr-2 mt-0.5 text-primary" />
                 <span>
-                  Lunes a Viernes: 8:00 AM - 5:00 PM
+                  Lunes a Viernes: 8:00 AM - 5:30 PM
                   <br />
-                  Sábados: 8:00 AM - 12:00 PM
+                  Sábados: 8:00 AM - 12:30 PM
                 </span>
               </li>
             </ul>

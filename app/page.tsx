@@ -129,7 +129,7 @@ export default function Home() {
           <Tabs defaultValue="artesania" className="w-full">
             <TabsList className="grid grid-cols-2 md:grid-cols-4 mb-8">
               <TabsTrigger value="artesania">Artesanía en Gaviones</TabsTrigger>
-              <TabsTrigger value="malla">Malla Triple Torsión</TabsTrigger>
+              <TabsTrigger value="malla">Malla Eslabonada</TabsTrigger>
               <TabsTrigger value="servicio">Servicio Llave en Mano</TabsTrigger>
               <TabsTrigger value="regional">Enfoque Regional</TabsTrigger>
             </TabsList>
@@ -146,7 +146,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="md:w-1/2">
-                  <h3 className="text-2xl font-bold mb-4 font-heading">Artesanía en Gaviones</h3>
+                  <h3 className="text-2xl font-bold mb-4 font-heading">Artesanía en Gaviones (también conocidos como malla de triple torsión)</h3>
                   <p className="mb-4">
                     Nuestros gaviones son tejidos a mano por artesanos expertos, garantizando una calidad superior y una
                     resistencia excepcional. Cada pieza es inspeccionada individualmente para asegurar la máxima
@@ -172,10 +172,9 @@ export default function Home() {
                   />
                 </div>
                 <div className="md:w-1/2">
-                  <h3 className="text-2xl font-bold mb-4 font-heading">Malla Triple Torsión</h3>
+                  <h3 className="text-2xl font-bold mb-4 font-heading">Malla Eslabonada</h3>
                   <p className="mb-4">
-                    Nuestra malla triple torsión cumple con las normas INVÍAS E-681, NTC 2403 y ASTM A975, A641,
-                    garantizando la máxima resistencia y durabilidad en cualquier condición climática.
+                    Nuestra malla eslabonada cumple con las normas aplicables, garantizando la máxima resistencia y durabilidad en cualquier condición climática.
                   </p>
                   <p>
                     El galvanizado de alta calidad proporciona una protección superior contra la corrosión, extendiendo
@@ -246,16 +245,16 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProductCard
-              title="Malla Triple Torsión"
-              description="Malla hexagonal de alambre galvanizado para gaviones, control de erosión y cerramientos."
-              imageSrc="/Malla2.jpg"
+              title="Malla Eslabonada"
+              description="Malla tejida de alambre galvanizado ideal para cerramientos perimetrales."
+              imageSrc="/Malla7.jpg"
               url="/productos/malla-triple-torsion"
             />
 
             <ProductCard
               title="Gaviones"
-              description="Estructuras de contención y decorativas fabricadas artesanalmente con la más alta calidad."
-              imageSrc="/Gaviones2.jpg"
+              description="Estructuras de contención y decorativas fabricadas artesanalmente con la más alta calidad (también conocidos como malla de triple torsión)."
+              imageSrc="/Gaviones1.jpg"
               url="/productos/gaviones"
             />
 
@@ -328,8 +327,8 @@ export default function Home() {
             Mira una muestra de cómo instalamos nuestros cerramientos, garantizando calidad y seguridad en cada paso.
           </p>
           <div className="aspect-video max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
-            <video controls className="w-full h-full object-cover" poster="/Malla6.jpg">
-              <source src="/Cerramiento1.mp4" type="video/mp4" />
+            <video controls muted className="w-full h-full object-cover" poster="/Malla6.jpg">
+              <source src="/CerramientoVideo1.mp4" type="video/mp4" />
               Tu navegador no soporta el elemento de video.
             </video>
           </div>

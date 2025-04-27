@@ -100,10 +100,11 @@ export default function PoliticaGarantiaPage() {
                 Para cualquier consulta relacionada con nuestra política de garantía, por favor contacte a nuestro
                 departamento de servicio al cliente:
               </p>
-              <p>
-                Teléfono: +57 (2) 123 4567
-                <br />
-                Email: garantias@fabrimallas.com
+              <p className="mb-2">
+                <strong>Teléfono:</strong> 300 656 4547
+              </p>
+              <p className="mb-2">
+                <strong>Correo electrónico:</strong> fabrimallas2011@hotmail.com
               </p>
             </div>
 

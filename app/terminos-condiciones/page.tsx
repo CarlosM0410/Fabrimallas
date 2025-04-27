@@ -149,11 +149,11 @@ export default function TerminosCondicionesPage() {
               <p>
                 <strong>Fabrimallas®</strong>
                 <br />
-                Calle 123 #45-67, Cali, Valle del Cauca, Colombia
+                Carrera 40 #42B-Esquina
                 <br />
-                Email: info@fabrimallas.com
+                Teléfono: 300 656 4547
                 <br />
-                Teléfono: +57 (2) 123 4567
+                Email: fabrimallas2011@hotmail.com
               </p>
             </div>
 

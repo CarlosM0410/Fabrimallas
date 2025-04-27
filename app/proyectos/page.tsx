@@ -13,7 +13,7 @@ const proyectos = [
     location: "Cali, Valle del Cauca",
     category: "Cerramiento Industrial",
     sector: "Industria",
-    imageSrc: "/placeholder.svg?height=300&width=400",
+    imageSrc: "/PuertaAlmacenFinca2.jpg",
     url: "/proyectos/cerramiento-industrial-zona-franca",
   },
   {
@@ -22,7 +22,7 @@ const proyectos = [
     location: "Popayán, Cauca",
     category: "Gaviones",
     sector: "Construcción",
-    imageSrc: "/placeholder.svg?height=300&width=400",
+    imageSrc: "/Gaviones3.jpg",
     url: "/proyectos/gaviones-control-erosion-popayan",
   },
   {
@@ -31,16 +31,16 @@ const proyectos = [
     location: "Jamundí, Valle del Cauca",
     category: "Cerramiento Residencial",
     sector: "Residencial",
-    imageSrc: "/placeholder.svg?height=300&width=400",
+    imageSrc: "/RejaCasa.jpg",
     url: "/proyectos/cerramiento-residencial-condominio",
   },
   {
     id: 4,
-    title: "Malla Triple Torsión para Talud",
+    title: "Malla Eslabonada para Talud",
     location: "Buenaventura, Valle del Cauca",
-    category: "Malla Triple Torsión",
+    category: "Malla Eslabonada",
     sector: "Construcción",
-    imageSrc: "/placeholder.svg?height=300&width=400",
+    imageSrc: "/Malla7.jpg",
     url: "/proyectos/malla-triple-torsion-talud",
   },
   {
@@ -49,7 +49,7 @@ const proyectos = [
     location: "Palmira, Valle del Cauca",
     category: "Cerramiento Industrial",
     sector: "Industria",
-    imageSrc: "/placeholder.svg?height=300&width=400",
+    imageSrc: "/MallaGalpon.jpg",
     url: "/proyectos/cerramiento-agroindustrial",
   },
   {
@@ -58,7 +58,7 @@ const proyectos = [
     location: "Cali, Valle del Cauca",
     category: "Gaviones",
     sector: "Comercial",
-    imageSrc: "/placeholder.svg?height=300&width=400",
+    imageSrc: "/Gaviones4.jpg",
     url: "/proyectos/gaviones-decorativos-centro-comercial",
   },
   {
@@ -67,7 +67,7 @@ const proyectos = [
     location: "Tuluá, Valle del Cauca",
     category: "Cerramiento Deportivo",
     sector: "Institucional",
-    imageSrc: "/placeholder.svg?height=300&width=400",
+    imageSrc: "/CanchasFutbol.jpg",
     url: "/proyectos/cerramiento-cancha-deportiva",
   },
   {
@@ -76,7 +76,7 @@ const proyectos = [
     location: "Buga, Valle del Cauca",
     category: "Malla Eslabonada",
     sector: "Institucional",
-    imageSrc: "/placeholder.svg?height=300&width=400",
+    imageSrc: "/Malla5.jpg",
     url: "/proyectos/malla-eslabonada-colegio",
   },
   {
@@ -85,7 +85,7 @@ const proyectos = [
     location: "Cali, Valle del Cauca",
     category: "Cerramiento Residencial",
     sector: "Residencial",
-    imageSrc: "/placeholder.svg?height=300&width=400",
+    imageSrc: "/Fachada3.jpg",
     url: "/proyectos/cerramiento-conjunto-residencial",
   },
 ]

@@ -25,20 +25,21 @@ export default function EquipoPage() {
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-6 font-heading">El Valor de Nuestro Equipo</h2>
               <p className="mb-4">
-                En Fabrimallas®, nuestro mayor activo es el talento humano. Contamos con un equipo multidisciplinario de
-                profesionales, técnicos y artesanos que combinan experiencia, conocimiento y pasión por la excelencia en
-                cada proyecto que realizamos.
+                En Fabrimallas®, nuestro mayor activo es el talento humano. Integramos un equipo multidisciplinario donde convergen:
               </p>
+              <ul className="list-disc list-inside mb-4 space-y-1">
+                <li>Profesionales técnicos —ingenieros, arquitectos y especialistas en producción— que garantizan diseño, cálculo y cumplimiento normativo.</li>
+                <li>Maestros artesanos con décadas de experiencia en el tejido manual de mallas y gaviones, custodios de la tradición y la calidad manual.</li>
+                <li>Operarios y personal de campo comprometidos con la instalación segura, la eficiencia y la mejora continua.</li>
+              </ul>
               <p>
-                Desde ingenieros y arquitectos hasta artesanos con décadas de experiencia en el tejido manual de mallas
-                y gaviones, cada miembro de nuestro equipo aporta habilidades únicas que nos permiten ofrecer soluciones
-                integrales y de la más alta calidad para nuestros clientes.
+                La combinación de conocimiento académico, pericia artesanal y pasión por la excelencia nos permite ofrecer soluciones integrales y productos de la más alta resistencia para cada proyecto.
               </p>
             </div>
             <div className="md:w-1/2">
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Fachada1.jpg"
                   alt="Equipo Fabrimallas"
                   fill
                   className="object-cover"
@@ -55,93 +56,63 @@ export default function EquipoPage() {
           <h2 className="text-3xl font-bold text-center mb-12 font-heading">Equipo Directivo</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Director General */}
+            {/* Gerente General */}
             <Card className="border-none shadow-lg overflow-hidden">
-              <div className="relative h-80 w-full">
+              <div className="relative h-80 w-full bg-neutral-light/50 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
-                  alt="Carlos Ramírez - Director General"
-                  fill
-                  className="object-cover"
+                  src="/logo fm.png"
+                  alt="Julian Marquez Chaparro - Gerente General"
+                  width={150}
+                  height={150}
+                  className="object-contain"
                 />
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-1 font-heading">Carlos Ramírez</h3>
-                <p className="text-primary font-medium mb-3">Director General</p>
+                <h3 className="text-xl font-bold mb-1 font-heading">Julian Marquez Chaparro</h3>
+                <p className="text-primary font-medium mb-3">Gerente General</p>
                 <p className="text-neutral/80 mb-4">
-                  Ingeniero Civil con más de 20 años de experiencia en el sector de la construcción. Fundador de
-                  Fabrimallas® y visionario detrás de nuestro enfoque artesanal.
+                  Lidera la operación con visión de crecimiento y calidad, integrando lo productivo, administrativo y comercial.
                 </p>
-                <div className="flex space-x-3">
-                  <a href="#" className="text-neutral/70 hover:text-primary transition-colors">
-                    <Linkedin className="h-5 w-5" />
-                    <span className="sr-only">LinkedIn</span>
-                  </a>
-                  <a href="#" className="text-neutral/70 hover:text-primary transition-colors">
-                    <Mail className="h-5 w-5" />
-                    <span className="sr-only">Email</span>
-                  </a>
-                </div>
               </CardContent>
             </Card>
 
-            {/* Directora Técnica */}
+            {/* Secretaría Ejecutiva */}
             <Card className="border-none shadow-lg overflow-hidden">
-              <div className="relative h-80 w-full">
+              <div className="relative h-80 w-full bg-neutral-light/50 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
-                  alt="María Fernanda López - Directora Técnica"
-                  fill
-                  className="object-cover"
+                  src="/logo fm.png"
+                  alt="Leydi Cerquera Henao - Secretaría Ejecutiva"
+                  width={150}
+                  height={150}
+                  className="object-contain"
                 />
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-1 font-heading">María Fernanda López</h3>
-                <p className="text-primary font-medium mb-3">Directora Técnica</p>
+                <h3 className="text-xl font-bold mb-1 font-heading">Leydi Cerquera Henao</h3>
+                <p className="text-primary font-medium mb-3">Secretaría Ejecutiva</p>
                 <p className="text-neutral/80 mb-4">
-                  Ingeniera Civil especializada en Geotecnia. Lidera nuestro departamento técnico y supervisa todos los
-                  proyectos para garantizar el cumplimiento de las normas y especificaciones.
+                  Coordina agendas y documentación; es el puente organizativo que mantiene fluyendo cada área.
                 </p>
-                <div className="flex space-x-3">
-                  <a href="#" className="text-neutral/70 hover:text-primary transition-colors">
-                    <Linkedin className="h-5 w-5" />
-                    <span className="sr-only">LinkedIn</span>
-                  </a>
-                  <a href="#" className="text-neutral/70 hover:text-primary transition-colors">
-                    <Mail className="h-5 w-5" />
-                    <span className="sr-only">Email</span>
-                  </a>
-                </div>
               </CardContent>
             </Card>
 
-            {/* Director de Producción */}
+            {/* Encargado de SST */}
             <Card className="border-none shadow-lg overflow-hidden">
-              <div className="relative h-80 w-full">
+              <div className="relative h-80 w-full bg-neutral-light/50 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
-                  alt="Javier Martínez - Director de Producción"
-                  fill
-                  className="object-cover"
+                  src="/logo fm.png"
+                  alt="ROBERT GEOVANNI GARCIA - Encargado de SST"
+                  width={150}
+                  height={150}
+                  className="object-contain"
                 />
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-1 font-heading">Javier Martínez</h3>
-                <p className="text-primary font-medium mb-3">Director de Producción</p>
+                <h3 className="text-xl font-bold mb-1 font-heading">ROBERT GEOVANNI GARCIA</h3>
+                <p className="text-primary font-medium mb-3">Encargado de SST</p>
                 <p className="text-neutral/80 mb-4">
-                  Maestro artesano con 30 años de experiencia en la fabricación de mallas y gaviones. Supervisa todos
-                  los procesos de producción y capacita a los nuevos artesanos.
+                  Vigila la seguridad laboral y capacita al personal, asegurando un entorno de trabajo seguro y normativo.
                 </p>
-                <div className="flex space-x-3">
-                  <a href="#" className="text-neutral/70 hover:text-primary transition-colors">
-                    <Linkedin className="h-5 w-5" />
-                    <span className="sr-only">LinkedIn</span>
-                  </a>
-                  <a href="#" className="text-neutral/70 hover:text-primary transition-colors">
-                    <Mail className="h-5 w-5" />
-                    <span className="sr-only">Email</span>
-                  </a>
-                </div>
               </CardContent>
             </Card>
           </div>
@@ -153,100 +124,89 @@ export default function EquipoPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 font-heading">Equipo Técnico</h2>
 
-          <div className="grid md:grid-cols-4 gap-6">
-            {/* Ingeniero de Proyectos */}
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {/* Servicios Generales */}
             <Card className="border-none shadow-lg overflow-hidden">
-              <div className="relative h-64 w-full">
+              <div className="relative h-64 w-full bg-neutral-light/50 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
-                  alt="Roberto Sánchez - Ingeniero de Proyectos"
-                  fill
-                  className="object-cover"
+                  src="/logo fm.png"
+                  alt="Claudia Duque Arias - Servicios Generales"
+                  width={100}
+                  height={100}
+                  className="object-contain"
                 />
               </div>
-              <CardContent className="p-4">
-                <h3 className="text-lg font-bold mb-1 font-heading">Roberto Sánchez</h3>
-                <p className="text-primary font-medium mb-2">Ingeniero de Proyectos</p>
-                <div className="flex flex-wrap gap-1 mb-3">
-                  <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
-                    Ing. Civil
-                  </Badge>
-                  <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
-                    Certificado PMP
-                  </Badge>
-                </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="text-lg font-bold mb-1 font-heading">Claudia Duque Arias</h3>
+                <p className="text-primary font-medium mb-2">Servicios Generales</p>
               </CardContent>
             </Card>
 
-            {/* Arquitecta */}
+            {/* Operario Mallas */}
             <Card className="border-none shadow-lg overflow-hidden">
-              <div className="relative h-64 w-full">
+              <div className="relative h-64 w-full bg-neutral-light/50 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
-                  alt="Laura Gómez - Arquitecta"
-                  fill
-                  className="object-cover"
+                  src="/logo fm.png"
+                  alt="Julian David Molano - Operario Mallas"
+                  width={100}
+                  height={100}
+                  className="object-contain"
                 />
               </div>
-              <CardContent className="p-4">
-                <h3 className="text-lg font-bold mb-1 font-heading">Laura Gómez</h3>
-                <p className="text-primary font-medium mb-2">Arquitecta</p>
-                <div className="flex flex-wrap gap-1 mb-3">
-                  <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
-                    Diseño Sostenible
-                  </Badge>
-                  <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
-                    BIM
-                  </Badge>
-                </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="text-lg font-bold mb-1 font-heading">Julian David Molano</h3>
+                <p className="text-primary font-medium mb-2">Operario Mallas</p>
               </CardContent>
             </Card>
 
-            {/* Supervisor de Instalaciones */}
+            {/* Operario Gaviones */}
             <Card className="border-none shadow-lg overflow-hidden">
-              <div className="relative h-64 w-full">
+              <div className="relative h-64 w-full bg-neutral-light/50 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
-                  alt="Pedro Morales - Supervisor de Instalaciones"
-                  fill
-                  className="object-cover"
+                  src="/logo fm.png"
+                  alt="Dilan Osorio - Operario Gaviones"
+                  width={100}
+                  height={100}
+                  className="object-contain"
                 />
               </div>
-              <CardContent className="p-4">
-                <h3 className="text-lg font-bold mb-1 font-heading">Pedro Morales</h3>
-                <p className="text-primary font-medium mb-2">Supervisor de Instalaciones</p>
-                <div className="flex flex-wrap gap-1 mb-3">
-                  <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
-                    Técnico Constructor
-                  </Badge>
-                  <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
-                    Certificado SENA
-                  </Badge>
-                </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="text-lg font-bold mb-1 font-heading">Dilan Osorio</h3>
+                <p className="text-primary font-medium mb-2">Operario Gaviones</p>
               </CardContent>
             </Card>
 
-            {/* Asesor Técnico */}
+            {/* Instalador Mallas */}
             <Card className="border-none shadow-lg overflow-hidden">
-              <div className="relative h-64 w-full">
+              <div className="relative h-64 w-full bg-neutral-light/50 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
-                  alt="Ana María Rodríguez - Asesora Técnica"
-                  fill
-                  className="object-cover"
+                  src="/logo fm.png"
+                  alt="Jhon Fredy Montoya Arias - Instalador Mallas"
+                  width={100}
+                  height={100}
+                  className="object-contain"
                 />
               </div>
-              <CardContent className="p-4">
-                <h3 className="text-lg font-bold mb-1 font-heading">Ana María Rodríguez</h3>
-                <p className="text-primary font-medium mb-2">Asesora Técnica</p>
-                <div className="flex flex-wrap gap-1 mb-3">
-                  <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
-                    Ing. Ambiental
-                  </Badge>
-                  <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
-                    Esp. Geotecnia
-                  </Badge>
-                </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="text-lg font-bold mb-1 font-heading">Jhon Fredy Montoya Arias</h3>
+                <p className="text-primary font-medium mb-2">Instalador Mallas</p>
+              </CardContent>
+            </Card>
+
+            {/* Tecnico en Puertas */}
+            <Card className="border-none shadow-lg overflow-hidden">
+              <div className="relative h-64 w-full bg-neutral-light/50 flex items-center justify-center">
+                <Image
+                  src="/logo fm.png"
+                  alt="Mauricio Mejia Baena - Tecnico en Puertas"
+                  width={100}
+                  height={100}
+                  className="object-contain"
+                />
+              </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="text-lg font-bold mb-1 font-heading">Mauricio Mejia Baena</h3>
+                <p className="text-primary font-medium mb-2">Técnico en Puertas</p>
               </CardContent>
             </Card>
           </div>

@@ -42,7 +42,7 @@ export default function ProcesoArtesanalPage() {
             <div className="md:w-1/2">
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/HaciendoGavion1.jpg"
                   alt="Artesano tejiendo malla para gaviones"
                   fill
                   className="object-cover"
@@ -63,7 +63,7 @@ export default function ProcesoArtesanalPage() {
             <div className="md:w-1/2">
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Malla1.jpg"
                   alt="Selección de materiales"
                   fill
                   className="object-cover"
@@ -96,7 +96,7 @@ export default function ProcesoArtesanalPage() {
             <div className="md:w-1/2">
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/HaciendoMalla1.jpg"
                   alt="Tejido manual de la malla"
                   fill
                   className="object-cover"
@@ -128,39 +128,7 @@ export default function ProcesoArtesanalPage() {
             <div className="md:w-1/2">
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Armado de gaviones"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
-                  3
-                </div>
-                <h3 className="text-2xl font-bold font-heading">Armado de Gaviones</h3>
-              </div>
-              <p className="mb-4">
-                Una vez tejida la malla, se procede al armado de los gaviones según las dimensiones requeridas. Este
-                proceso incluye el corte preciso de la malla, el doblado para formar las caras del gavión y la unión de
-                las aristas mediante alambre galvanizado de alta resistencia.
-              </p>
-              <p>
-                Cada gavión se arma con refuerzos adicionales en las aristas y diafragmas internos cuando es necesario,
-                para proporcionar mayor estabilidad estructural. Los bordes se refuerzan con alambre de mayor calibre
-                para garantizar la integridad de la estructura.
-              </p>
-            </div>
-          </div>
-
-          {/* Step 4 */}
-          <div className="flex flex-col md:flex-row-reverse gap-8 items-center mb-16">
-            <div className="md:w-1/2">
-              <div className="relative aspect-video overflow-hidden rounded-lg">
-                <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Gaviones2.jpg"
                   alt="Control de calidad"
                   fill
                   className="object-cover"
@@ -170,7 +138,7 @@ export default function ProcesoArtesanalPage() {
             <div className="md:w-1/2">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
-                  4
+                  3
                 </div>
                 <h3 className="text-2xl font-bold font-heading">Control de Calidad</h3>
               </div>
@@ -183,11 +151,37 @@ export default function ProcesoArtesanalPage() {
                 <li>La resistencia de las uniones y aristas</li>
                 <li>Las dimensiones exactas según las especificaciones</li>
                 <li>La calidad del galvanizado en toda la estructura</li>
-                <li>La correcta colocación de los refuerzos y diafragmas</li>
               </ul>
               <p>
                 Solo los gaviones que cumplen con todos nuestros estándares de calidad son aprobados para su entrega e
                 instalación.
+              </p>
+            </div>
+          </div>
+
+          {/* Step 4 */}
+          <div className="flex flex-col md:flex-row-reverse gap-8 items-center mb-16">
+            <div className="md:w-1/2">
+              <div className="relative aspect-video overflow-hidden rounded-lg">
+                <Image
+                  src="/HaciendoGavion1.jpg"
+                  alt="Armado de gaviones"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div className="md:w-1/2">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                  4
+                </div>
+                <h3 className="text-2xl font-bold font-heading">Armado de Gaviones</h3>
+              </div>
+              <p className="mb-4">
+                Una vez tejida la malla, se procede al armado de los gaviones según las dimensiones requeridas. Este
+                proceso incluye el doblado para formar las caras del gavión y la unión de las aristas mediante alambre
+                galvanizado de alta resistencia.
               </p>
             </div>
           </div>
@@ -197,7 +191,7 @@ export default function ProcesoArtesanalPage() {
             <div className="md:w-1/2">
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Gaviones3.jpg"
                   alt="Instalación en obra"
                   fill
                   className="object-cover"
@@ -212,14 +206,13 @@ export default function ProcesoArtesanalPage() {
                 <h3 className="text-2xl font-bold font-heading">Instalación en Obra</h3>
               </div>
               <p className="mb-4">
-                El proceso artesanal no termina en la fabricación. Nuestros equipos de instalación están formados por
-                técnicos especializados que conocen a fondo las características de nuestros productos y las mejores
-                prácticas para su colocación.
+                El proceso artesanal no termina en la fabricación. El equipos de instalación está formados por técnicos especializados que conocen a fondo las características de nuestros productos y las mejores prácticas para su colocación.
               </p>
-              <p>
-                La instalación incluye la preparación adecuada del terreno, la colocación precisa de los gaviones, su
-                llenado con piedra seleccionada y el cierre y amarre final. Este enfoque integral garantiza que el
-                producto final cumpla con todas las especificaciones técnicas y funcionales requeridas por el proyecto.
+              <p className="mb-4">
+                La instalación incluye la preparación adecuada del terreno, la colocación precisa de los gaviones, su llenado con piedra seleccionada y el cierre y amarre final. Este enfoque integral garantiza que el producto final cumpla con todas las especificaciones técnicas y funcionales requeridas por el proyecto.
+              </p>
+              <p className="text-sm text-neutral/70">
+                <em>Nota: Fabrimallas no cuenta con Tecnicos para la instalacion de gaviones.</em>
               </p>
             </div>
           </div>

@@ -25,20 +25,29 @@ export default function EmpresaPage() {
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-6 font-heading">Quiénes Somos</h2>
               <p className="mb-4">
-                Fabrimallas® es una empresa colombiana especializada en la fabricación e instalación de soluciones de
-                cerramientos, mallas y gaviones para los sectores de construcción, industria, agricultura y residencial.
+                Nuestra historia, un legado tejido con amor y acero. Hace más de cuatro décadas,{' '}
+                <strong>Carlos Alberto Márquez Londoño</strong> soñó con proteger los campos y hogares de Tuluá. Con sus propias
+                manos comenzó a entrelazar alambre galvanizado, pieza tras pieza, hasta formar las primeras mallas que
+                darían nombre a <strong>FABRIMALLAS</strong>. Su dedicación, su palabra empeñada y el cariño por su gente
+                hicieron que, muy pronto, la empresa se convirtiera en sinónimo de confianza y seguridad en todo el
+                corazón del Valle del Cauca.
               </p>
               <p className="mb-4">
-                Fundada en 2005 en Cali, Valle del Cauca, nuestra empresa ha crecido hasta convertirse en un referente
-                regional en el suroccidente colombiano, destacándonos por la calidad artesanal de nuestros productos y
-                nuestro servicio integral llave por la calidad artesanal de nuestros productos y nuestro servicio
-                integral llave en mano.
+                Hoy ese sueño late con la misma fuerza en las manos de su hijo, <strong>Julián Márquez</strong>. Con la
+                pasión heredada y la mirada puesta en el futuro, Julián ha llevado nuestra marca más allá de las montañas
+                que nos vieron nacer, llegando a nuevos departamentos y conquistando proyectos de toda escala. Cada
+                metro de malla, cada gavión y cada cerramiento que sale de nuestro taller lleva impreso algo más que
+                acero: lleva la historia de una familia que ama lo que hace y el compromiso de proteger lo que más
+                amas.
+              </p>
+              <p className="mb-4">
+                Porque en <strong>FABRIMALLAS</strong> no solo soldamos tubos y entretejemos alambres; soldamos
+                generaciones y entretejemos sueños. Seguimos creciendo, sí, pero sin olvidar de dónde venimos ni el
+                propósito que nos une: brindar seguridad que perdura y un servicio que se siente tan cercano como un
+                apretón de manos entre vecinos.
               </p>
               <p>
-                Con más de 15 años de experiencia en el mercado, hemos ejecutado con éxito cientos de proyectos que
-                avalan nuestra trayectoria y compromiso con la excelencia. Nuestro enfoque en la artesanía, la calidad
-                de los materiales y la satisfacción del cliente nos ha permitido construir relaciones duraderas con
-                empresas constructoras, industrias, entidades gubernamentales y clientes residenciales.
+                Gracias por confiar en nuestra familia para cuidar la tuya.
               </p>
             </div>
             <div className="md:w-1/2">
@@ -226,77 +235,44 @@ export default function EmpresaPage() {
           <h2 className="text-3xl font-bold text-center mb-12 font-heading">Nuestra Historia</h2>
 
           <div className="relative border-l-4 border-primary ml-4 md:ml-0 md:mx-auto md:max-w-3xl pl-8 md:pl-0">
-            {/* 2005 */}
+            {/* 1983 */}
             <div className="mb-12 md:flex md:items-center">
               <div className="md:w-1/2 md:pr-8 md:text-right">
-                <h3 className="text-xl font-bold font-heading">2005</h3>
-                <p className="text-neutral/80">Fundación de Fabrimallas®</p>
+                <h3 className="text-xl font-bold font-heading">1983</h3>
+                <p className="text-neutral/80">Fundación en Tuluá por Carlos Alberto Márquez Londoño.</p>
               </div>
               <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full -ml-2 md:-ml-2 mt-1.5 md:mt-0"></div>
               <div className="md:w-1/2 md:pl-8">
+                {/* Puedes añadir un texto descriptivo más largo aquí si lo tienes */}
+              </div>
+            </div>
+
+            {/* 1998 */}
+            <div className="mb-12 md:flex md:items-center">
+              <div className="md:w-1/2 md:pr-8 md:text-right">
                 <p>
-                  Fabrimallas® inicia operaciones en Cali como un pequeño taller especializado en la fabricación
-                  artesanal de mallas y gaviones.
+                  Apertura de la primera planta propia de producción semiautomática, elevando la capacidad a 20 t/mes de
+                  alambre procesado.
                 </p>
+              </div>
+              <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full -ml-2 md:-ml-2 mt-1.5 md:mt-0"></div>
+              <div className="md:w-1/2 md:pl-8">
+                <h3 className="text-xl font-bold font-heading">1998</h3>
+                <p className="text-neutral/80">Primera planta propia</p>
               </div>
             </div>
 
             {/* 2008 */}
             <div className="mb-12 md:flex md:items-center">
               <div className="md:w-1/2 md:pr-8 md:text-right">
-                <p>
-                  Expansión de la línea de productos para incluir cerramientos residenciales e industriales. Primer
-                  proyecto importante para una constructora local.
-                </p>
-              </div>
-              <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full -ml-2 md:-ml-2 mt-1.5 md:mt-0"></div>
-              <div className="md:w-1/2 md:pl-8">
                 <h3 className="text-xl font-bold font-heading">2008</h3>
-                <p className="text-neutral/80">Diversificación de Productos</p>
-              </div>
-            </div>
-
-            {/* 2012 */}
-            <div className="mb-12 md:flex md:items-center">
-              <div className="md:w-1/2 md:pr-8 md:text-right">
-                <h3 className="text-xl font-bold font-heading">2012</h3>
-                <p className="text-neutral/80">Certificación de Calidad</p>
+                <p className="text-neutral/80">+100 km instalados</p>
               </div>
               <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full -ml-2 md:-ml-2 mt-1.5 md:mt-0"></div>
               <div className="md:w-1/2 md:pl-8">
                 <p>
-                  Obtención de certificaciones de calidad para nuestros productos. Implementación de procesos
-                  estandarizados de fabricación e instalación.
-                </p>
-              </div>
-            </div>
-
-            {/* 2015 */}
-            <div className="mb-12 md:flex md:items-center">
-              <div className="md:w-1/2 md:pr-8 md:text-right">
-                <p>
-                  Traslado a instalaciones más amplias. Adquisición de equipos especializados para mejorar la
-                  producción. Ampliación del equipo de trabajo.
-                </p>
-              </div>
-              <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full -ml-2 md:-ml-2 mt-1.5 md:mt-0"></div>
-              <div className="md:w-1/2 md:pl-8">
-                <h3 className="text-xl font-bold font-heading">2015</h3>
-                <p className="text-neutral/80">Crecimiento y Expansión</p>
-              </div>
-            </div>
-
-            {/* 2018 */}
-            <div className="mb-12 md:flex md:items-center">
-              <div className="md:w-1/2 md:pr-8 md:text-right">
-                <h3 className="text-xl font-bold font-heading">2018</h3>
-                <p className="text-neutral/80">Servicio Integral</p>
-              </div>
-              <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full -ml-2 md:-ml-2 mt-1.5 md:mt-0"></div>
-              <div className="md:w-1/2 md:pl-8">
-                <p>
-                  Implementación del servicio integral "llave en mano" que incluye asesoría, diseño, fabricación e
-                  instalación. Formación de equipos especializados por sector.
+                  Superamos los 100 km de malla instalada en todo el Valle del Cauca, reflejo de la confianza de
+                  nuestros clientes.
                 </p>
               </div>
             </div>
@@ -305,31 +281,33 @@ export default function EmpresaPage() {
             <div className="mb-12 md:flex md:items-center">
               <div className="md:w-1/2 md:pr-8 md:text-right">
                 <p>
-                  Adaptación a los desafíos de la pandemia. Implementación de protocolos de bioseguridad y nuevas
-                  modalidades de trabajo. Desarrollo de canales digitales.
+                  Obtención de la certificación de soldadura AWS y actualización integral de los protocolos de
+                  Seguridad y Salud en el Trabajo (Res. 0312/2019).
                 </p>
               </div>
               <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full -ml-2 md:-ml-2 mt-1.5 md:mt-0"></div>
               <div className="md:w-1/2 md:pl-8">
                 <h3 className="text-xl font-bold font-heading">2020</h3>
-                <p className="text-neutral/80">Resiliencia e Innovación</p>
+                <p className="text-neutral/80">Certificación AWS y SG-SST</p>
               </div>
             </div>
 
             {/* 2023 */}
-            <div className="md:flex md:items-center">
+            <div className="mb-12 md:flex md:items-center">
               <div className="md:w-1/2 md:pr-8 md:text-right">
                 <h3 className="text-xl font-bold font-heading">2023</h3>
-                <p className="text-neutral/80">Presente y Futuro</p>
+                <p className="text-neutral/80">Proyecto récord</p>
               </div>
               <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full -ml-2 md:-ml-2 mt-1.5 md:mt-0"></div>
               <div className="md:w-1/2 md:pl-8">
                 <p>
-                  Consolidación como referente regional en soluciones de cerramientos y gaviones. Implementación de
-                  prácticas sostenibles y enfoque en la responsabilidad social empresarial.
+                  Culminación del proyecto de malla más grande hasta la fecha (5.000 Mts) en el Valle del Cauca.
                 </p>
               </div>
             </div>
+
+            {/* Fin de la línea */}
+            <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-neutral-light rounded-full -ml-2 md:-ml-2 mt-1.5"></div>
           </div>
         </div>
       </section>
@@ -337,9 +315,9 @@ export default function EmpresaPage() {
       {/* CTA Banner */}
       <CTABanner
         title="¿Quieres conocer más sobre Fabrimallas®?"
-        description="Contáctanos para obtener más información sobre nuestra empresa y cómo podemos ayudarte con tu proyecto."
-        buttonText="CONTÁCTANOS"
-        buttonUrl="/contacto"
+        description="Nuestro equipo está preparado para asesorarte y ofrecerte la mejor solución."
+        buttonText="COTIZA AHORA"
+        buttonLink="/contacto"
       />
     </div>
   )

@@ -65,33 +65,33 @@ export default function AdminPanel() {
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="space-y-2">
-            <Label htmlFor="contactPhone">Teléfono de Contacto Principal</Label>
+            <Label htmlFor="contactPhone">Teléfono de Contacto</Label>
             <Input
               id="contactPhone"
               type="tel"
-              placeholder="+57 (2) 123 4567"
+              placeholder="300 656 4547"
               value={contactPhone}
               onChange={(e) => setContactPhone(e.target.value)}
             />
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="contactEmail">Email de Contacto Principal</Label>
+            <Label htmlFor="contactEmail">Email de Contacto</Label>
             <Input
               id="contactEmail"
               type="email"
-              placeholder="contacto@fabrimallas.com"
+              placeholder="fabrimallas2011@hotmail.com"
               value={contactEmail}
               onChange={(e) => setContactEmail(e.target.value)}
             />
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="whatsappUrl">Enlace WhatsApp Business</Label>
+            <Label htmlFor="whatsappUrl">Enlace WhatsApp (completo)</Label>
             <Input
               id="whatsappUrl"
               type="url"
-              placeholder="https://wa.me/573001234567"
+              placeholder="https://wa.me/573006564547"
               value={whatsappUrl}
               onChange={(e) => setWhatsappUrl(e.target.value)}
             />

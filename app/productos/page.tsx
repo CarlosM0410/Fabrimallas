@@ -2,8 +2,9 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Download } from "lucide-react"
 import ProductCard from "@/components/product-card"
+import ProductCardCarousel from "@/components/product-card-carousel"
 import CTABanner from "@/components/cta-banner"
 
 export default function ProductosPage() {
@@ -15,10 +16,16 @@ export default function ProductosPage() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 font-heading">
             Nuestros Productos
           </h1>
-          <p className="text-white/90 max-w-2xl mx-auto">
+          <p className="text-white/90 max-w-2xl mx-auto mb-6">
             Descubre nuestra gama completa de soluciones en cerramientos, mallas y gaviones fabricados con la más alta
             calidad artesanal.
           </p>
+          <Button asChild variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
+            <a href="/Fabrimallas_Especificaciones_Sectores_v2.pdf" target="_blank" rel="noopener noreferrer">
+              <Download className="mr-2 h-4 w-4" />
+              Descargar Guía de Especificaciones (PDF)
+            </a>
+          </Button>
         </div>
       </section>
 
@@ -37,45 +44,87 @@ export default function ProductosPage() {
             <TabsContent value="todos">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <ProductCard
-                  title="Malla Triple Torsión"
-                  description="Malla hexagonal de alambre galvanizado para gaviones, control de erosión y cerramientos."
-                  imageSrc="/placeholder.svg?height=300&width=400"
-                  url="/productos/malla-triple-torsion"
-                />
-
-                <ProductCard
                   title="Gaviones"
-                  description="Estructuras de contención y decorativas fabricadas artesanalmente con la más alta calidad."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  description="Estructuras de contención y decorativas fabricadas artesanalmente con la más alta calidad (también conocidos como malla de triple torsión)."
+                  imageSrc="/Gaviones1.jpg"
                   url="/productos/gaviones"
                 />
 
                 <ProductCard
                   title="Cerramientos Integrales"
                   description="Soluciones completas de cerramiento para propiedades residenciales, industriales y comerciales."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  imageSrc="/Fachada1.jpg"
                   url="/productos/cerramientos-integrales"
                 />
 
                 <ProductCard
                   title="Malla Eslabonada"
                   description="Malla versátil para cerramientos de seguridad con excelente relación costo-beneficio."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  imageSrc="/Malla7.jpg"
                   url="/productos/malla-eslabonada"
-                />
-
-                <ProductCard
-                  title="Colchones Reno"
-                  description="Estructuras de malla triple torsión de baja altura para revestimiento y protección de cauces."
-                  imageSrc="/placeholder.svg?height=300&width=400"
-                  url="/productos/colchones-reno"
                 />
 
                 <ProductCard
                   title="Concertina"
                   description="Alambre de seguridad en espiral para reforzar la protección de cerramientos perimetrales."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  imageSrc="/Concertina1.jpg"
                   url="/productos/concertina"
+                />
+
+                <ProductCard
+                  title="Malla Electrosoldada"
+                  description="Malla rígida de alta resistencia para cerramientos industriales y de seguridad."
+                  imageSrc="/Malla3.jpg"
+                  url="/productos/malla-electrosoldada"
+                />
+
+                <ProductCard
+                  title="Gaviones Decorativos"
+                  description="Soluciones estéticas para paisajismo y arquitectura con acabados personalizados."
+                  imageSrc="/Gaviones4.jpg"
+                  url="/productos/gaviones-decorativos"
+                />
+
+                <ProductCard
+                  title="Cerramientos Industriales"
+                  description="Sistemas de alta seguridad para protección de instalaciones industriales y comerciales."
+                  imageSrc="/PuertaAlmacenFinca.jpg"
+                  url="/productos/cerramientos-industriales"
+                />
+
+                <ProductCard
+                  title="Cerramientos Residenciales"
+                  description="Soluciones estéticas y funcionales para propiedades residenciales y condominios."
+                  imageSrc="/RejaCasa.jpg"
+                  url="/productos/cerramientos-residenciales"
+                />
+
+                <ProductCard
+                  title="Juegos infantiles"
+                  description="Diversión segura al estilo de los parques de la ciudad. Diseñamos y fabricamos columpios, resbaladeros y módulos trepadores con estructura de acero galvanizado y acabados de pintura epóxica no tóxica. Cumplen normas de seguridad, resisten la intemperie y llegan listos para instalar y disfrutar."
+                  imageSrc="/Juegos1.png"
+                  url="/productos/juegos-infantiles"
+                />
+
+                <ProductCard
+                  title="Tapones de aluminio"
+                  description="Sella el poste, bloquea la humedad. Nuestros tapones a presión evitan que el agua entre al tubo, frenan la corrosión y dan un remate limpio y profesional a tu cerramiento. Diámetros disponibles: 1″, 1 ¼″, 1 ½″, 2″, 2 ½″, 3″ y 4″."
+                  imageSrc="/Tapones2.jpg"
+                  url="/productos/tapones-aluminio"
+                />
+
+                <ProductCardCarousel
+                  title="Puertas"
+                  description="Madera: calidez y carácter en tablones macizos, tratada contra humedad e insectos. Malla eslabonada: acceso ligero y seguro, ideal para fincas y áreas deportivas; marco tubular soldado. Malla electrosoldada: máxima rigidez para industrias y bodegas; cuadriculado uniforme y acabado galvanizado. Cada modelo se fabrica a medida, incluye bisagras de alta resistencia y opción de cerradura integrada."
+                  imageSrcs={["/Puerta7.jpg", "/Puerta1.jpg", "/Puerta2.jpg"]}
+                  url="/productos/puertas"
+                />
+
+                <ProductCard
+                  title="Cerrajería"
+                  description="Remata tus escaleras con nuestros pasamanos de acero: soldadura continua, pintura anticorrosiva y anclajes firmes para una sujeción cómoda y duradera. También desarrollamos barandas, barbollas y otros trabajos de cerrajería a la medida, con el mismo sello de calidad Fabrimallas®."
+                  imageSrc="/Cerrajeria1.png"
+                  url="/productos/cerrajeria"
                 />
               </div>
             </TabsContent>
@@ -84,23 +133,16 @@ export default function ProductosPage() {
             <TabsContent value="mallas">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <ProductCard
-                  title="Malla Triple Torsión"
-                  description="Malla hexagonal de alambre galvanizado para gaviones, control de erosión y cerramientos."
-                  imageSrc="/placeholder.svg?height=300&width=400"
-                  url="/productos/malla-triple-torsion"
-                />
-
-                <ProductCard
                   title="Malla Eslabonada"
                   description="Malla versátil para cerramientos de seguridad con excelente relación costo-beneficio."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  imageSrc="/Malla7.jpg"
                   url="/productos/malla-eslabonada"
                 />
 
                 <ProductCard
                   title="Malla Electrosoldada"
                   description="Malla rígida de alta resistencia para cerramientos industriales y de seguridad."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  imageSrc="/Malla3.jpg"
                   url="/productos/malla-electrosoldada"
                 />
               </div>
@@ -111,22 +153,15 @@ export default function ProductosPage() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <ProductCard
                   title="Gaviones"
-                  description="Estructuras de contención y decorativas fabricadas artesanalmente con la más alta calidad."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  description="Estructuras de contención y decorativas fabricadas artesanalmente con la más alta calidad (también conocidos como malla de triple torsión)."
+                  imageSrc="/Gaviones1.jpg"
                   url="/productos/gaviones"
-                />
-
-                <ProductCard
-                  title="Colchones Reno"
-                  description="Estructuras de malla triple torsión de baja altura para revestimiento y protección de cauces."
-                  imageSrc="/placeholder.svg?height=300&width=400"
-                  url="/productos/colchones-reno"
                 />
 
                 <ProductCard
                   title="Gaviones Decorativos"
                   description="Soluciones estéticas para paisajismo y arquitectura con acabados personalizados."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  imageSrc="/Gaviones4.jpg"
                   url="/productos/gaviones-decorativos"
                 />
               </div>
@@ -138,29 +173,36 @@ export default function ProductosPage() {
                 <ProductCard
                   title="Cerramientos Integrales"
                   description="Soluciones completas de cerramiento para propiedades residenciales, industriales y comerciales."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  imageSrc="/Fachada1.jpg"
                   url="/productos/cerramientos-integrales"
                 />
 
                 <ProductCard
                   title="Cerramientos Industriales"
                   description="Sistemas de alta seguridad para protección de instalaciones industriales y comerciales."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  imageSrc="/PuertaAlmacenFinca.jpg"
                   url="/productos/cerramientos-industriales"
                 />
 
                 <ProductCard
                   title="Cerramientos Residenciales"
                   description="Soluciones estéticas y funcionales para propiedades residenciales y condominios."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  imageSrc="/RejaCasa.jpg"
                   url="/productos/cerramientos-residenciales"
                 />
 
                 <ProductCard
                   title="Concertina"
                   description="Alambre de seguridad en espiral para reforzar la protección de cerramientos perimetrales."
-                  imageSrc="/placeholder.svg?height=300&width=400"
+                  imageSrc="/Concertina1.jpg"
                   url="/productos/concertina"
+                />
+
+                <ProductCardCarousel
+                  title="Puertas"
+                  description="Madera: calidez y carácter en tablones macizos, tratada contra humedad e insectos. Malla eslabonada: acceso ligero y seguro, ideal para fincas y áreas deportivas; marco tubular soldado. Malla electrosoldada: máxima rigidez para industrias y bodegas; cuadriculado uniforme y acabado galvanizado. Cada modelo se fabrica a medida, incluye bisagras de alta resistencia y opción de cerradura integrada."
+                  imageSrcs={["/Puerta7.jpg", "/Puerta1.jpg", "/Puerta2.jpg"]}
+                  url="/productos/puertas"
                 />
               </div>
             </TabsContent>
@@ -176,7 +218,7 @@ export default function ProductosPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/HaciendoGavion1.jpg"
                 alt="Gaviones Artesanales"
                 fill
                 className="object-cover"
@@ -200,7 +242,7 @@ export default function ProductosPage() {
 
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/MallaEnBodega.jpg"
                 alt="Cerramientos Integrales"
                 fill
                 className="object-cover"
@@ -313,9 +355,9 @@ export default function ProductosPage() {
       {/* CTA Banner */}
       <CTABanner
         title="¿Necesitas un producto específico?"
-        description="Nuestro equipo está listo para asesorarte y ofrecerte la mejor solución para tus necesidades."
+        description="Contáctanos para obtener una cotización personalizada para tu proyecto."
         buttonText="SOLICITAR COTIZACIÓN"
-        buttonUrl="/contacto"
+        buttonLink="/contacto"
       />
     </div>
   )

@@ -29,17 +29,6 @@ const articulos = [
     slug: "cerramientos-industriales-seguridad-normativas",
   },
   {
-    id: 3,
-    title: "Malla Triple Torsión vs. Malla Eslabonada: ¿Cuál elegir?",
-    excerpt:
-      "Comparativa detallada entre dos de los tipos de malla más utilizados en cerramientos y proyectos de contención.",
-    date: "10 de febrero, 2023",
-    author: "Ing. Laura Gómez",
-    category: "Productos",
-    imageSrc: "/placeholder.svg?height=300&width=500",
-    slug: "malla-triple-torsion-vs-malla-eslabonada",
-  },
-  {
     id: 4,
     title: "Cerramientos residenciales: Tendencias de diseño para 2023",
     excerpt:
