@@ -42,7 +42,7 @@ export default function Header() {
         </Link>
 
         {/* Search Bar - Visible only on desktop */}
-        <div className="hidden md:block mx-4">
+        <div className="hidden md:flex md:flex-1 md:justify-center md:px-4">
           <SearchBar />
         </div>
 
