@@ -96,7 +96,7 @@ export default function ProcesoArtesanalPage() {
             <div className="md:w-1/2">
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/HaciendoGavion1.jpg"
+                  src="/HaciendoGavion4.jpg"
                   alt="Artesano tejiendo malla de triple torsión manualmente"
                   fill
                   className="object-cover"
@@ -320,7 +320,7 @@ export default function ProcesoArtesanalPage() {
         </div>
       </section>
 
-      {/* Video Section */}
+      {/* Video Section - Updated to use local video */}
       <section className="py-16 bg-neutral-light/30">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8 font-heading">Conoce Nuestro Proceso en Video</h2>
@@ -328,10 +328,19 @@ export default function ProcesoArtesanalPage() {
             Mira cómo nuestros artesanos fabrican gaviones y mallas con técnicas tradicionales combinadas con tecnología
             moderna.
           </p>
-          <div className="relative aspect-video max-w-4xl mx-auto overflow-hidden rounded-lg">
-            <div className="absolute inset-0 bg-neutral/10 flex items-center justify-center">
-              <p className="text-neutral">Video del proceso artesanal</p>
-            </div>
+          <div className="relative aspect-video max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
+            {/* HTML5 Video Player */}
+            <video
+              controls
+              muted
+              loop
+              playsInline
+              poster="/Soldando1.jpg" // Poster image from your files
+              className="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src="/SoldandoVideo.mp4" type="video/mp4" />
+              Tu navegador no soporta el elemento de video.
+            </video>
           </div>
         </div>
       </section>
