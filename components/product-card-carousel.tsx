@@ -42,8 +42,8 @@ export default function ProductCardCarousel({
                     {/* Add Previous/Next buttons if more than one image */}
                     {imageSrcs.length > 1 && (
                         <>
-                            <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/30 text-white hover:bg-black/50 border-none" />
-                            <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/30 text-white hover:bg-black/50 border-none" />
+                            <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-black/50 text-white hover:bg-black/70 border-none" />
+                            <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-black/50 text-white hover:bg-black/70 border-none" />
                         </>
                     )}
                 </Carousel>

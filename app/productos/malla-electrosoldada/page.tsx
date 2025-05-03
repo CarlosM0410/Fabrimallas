@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 export default function MallaElectrosoldadaPage() {
     return (
@@ -22,6 +23,13 @@ export default function MallaElectrosoldadaPage() {
           - Detalla las dimensiones de los paneles, tamaño de los huecos (cocadas), calibres y acabados.
           - Puedes usar <ProductCard /> o especificaciones técnicas.
         */}
+                <Image
+                    src="/MallaElectrosoldada.jpg"
+                    alt="Malla Electrosoldada Fabrimallas"
+                    width={800}
+                    height={500}
+                    className="mx-auto rounded-md object-cover mb-6"
+                />
                 <h2 className="text-2xl font-semibold mb-2 font-heading">Nuestras Mallas Electrosoldadas</h2>
                 <p className="text-muted-foreground mb-4">
                     Fabricamos paneles de malla electrosoldada en diversas configuraciones para satisfacer las necesidades de tu proyecto.
