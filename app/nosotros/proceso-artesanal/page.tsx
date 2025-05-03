@@ -63,8 +63,8 @@ export default function ProcesoArtesanalPage() {
             <div className="md:w-1/2">
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/Malla1.jpg"
-                  alt="Selección de materiales"
+                  src="/Chipa2.jpg"
+                  alt="Selección de alambre galvanizado de alta calidad"
                   fill
                   className="object-cover"
                 />
@@ -96,8 +96,8 @@ export default function ProcesoArtesanalPage() {
             <div className="md:w-1/2">
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/HaciendoMalla1.jpg"
-                  alt="Tejido manual de la malla"
+                  src="/HaciendoGavion1.jpg"
+                  alt="Artesano tejiendo malla de triple torsión manualmente"
                   fill
                   className="object-cover"
                 />
@@ -164,8 +164,8 @@ export default function ProcesoArtesanalPage() {
             <div className="md:w-1/2">
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/HaciendoGavion1.jpg"
-                  alt="Armado de gaviones"
+                  src="/Gaviones4.jpg"
+                  alt="Armado de gaviones listos para instalación"
                   fill
                   className="object-cover"
                 />

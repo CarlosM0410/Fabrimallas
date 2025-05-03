@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
-import { MapPin, Phone, Mail, Clock, CheckCircle } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, CheckCircle, ExternalLink } from "lucide-react"
 import { useEffect } from "react"
 
 export default function ContactoPage() {
@@ -25,6 +25,7 @@ export default function ContactoPage() {
     telefono: "",
     tipoProyecto: "",
     metros: "",
+    metrosAltura: "",
     ubicacion: "",
     mensaje: "",
     aceptaPolitica: false,
@@ -70,6 +71,7 @@ export default function ContactoPage() {
         telefono: "",
         tipoProyecto: "",
         metros: "",
+        metrosAltura: "",
         ubicacion: "",
         mensaje: "",
         aceptaPolitica: false,
@@ -172,9 +174,20 @@ export default function ContactoPage() {
               {/* Map */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4 font-heading">Nuestra Ubicación</h3>
-                <div className="aspect-video bg-neutral-light/50 rounded-lg flex items-center justify-center">
-                  <p className="text-neutral">Mapa de Google Maps aquí</p>
-                </div>
+                <a
+                  href="https://www.google.com/maps/place/FABRIMALLAS+-+Mallas+Eslabonadas+y+Rizadas+-+Concertinas+-+Gaviones+Triple+Torsi%C3%B3n+-+Servicio+de+Dobladora/@4.070706,-76.1951699,17z/data=!3m1!4b1!4m6!3m5!1s0x8e39c5d409fc501d:0x7553bdea71d64c3d!8m2!3d4.070706!4d-76.192595!16s%2Fg%2F11pysjgwjv?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block relative aspect-video bg-neutral-light/50 rounded-lg overflow-hidden group"
+                >
+                  <div className="absolute inset-0 flex items-center justify-center flex-col bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <ExternalLink className="h-12 w-12 text-white mb-2" />
+                    <p className="text-white font-semibold">Ver en Google Maps</p>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <p className="text-neutral p-4 bg-background/80 rounded">Ver ubicación en Google Maps</p>
+                  </div>
+                </a>
               </div>
             </div>
 
@@ -265,38 +278,53 @@ export default function ContactoPage() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="metros">Metros Lineales/Cantidad (aprox.)</Label>
+                      <Label htmlFor="metros">Metros Lineales/Cuadrados *</Label>
                       <Input
                         id="metros"
                         name="metros"
                         value={formData.metros}
                         onChange={handleChange}
-                        placeholder="Ej: 100 metros"
+                        required
+                        placeholder="Ej: 50"
+                        type="number"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="ubicacion">Ubicación (Municipio/Departamento)</Label>
+                    <Label htmlFor="metrosAltura">Metros de Altura (opcional)</Label>
+                    <Input
+                      id="metrosAltura"
+                      name="metrosAltura"
+                      value={formData.metrosAltura}
+                      onChange={handleChange}
+                      placeholder="Ej: 1.8"
+                      type="number"
+                      step="0.1"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="ubicacion">Ubicación del Proyecto *</Label>
                     <Input
                       id="ubicacion"
                       name="ubicacion"
                       value={formData.ubicacion}
                       onChange={handleChange}
-                      placeholder="Ej: Cali, Valle del Cauca"
+                      required
+                      placeholder="Ciudad, Barrio"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="mensaje">Mensaje *</Label>
+                    <Label htmlFor="mensaje">Mensaje Adicional</Label>
                     <Textarea
                       id="mensaje"
                       name="mensaje"
                       value={formData.mensaje}
                       onChange={handleChange}
-                      required
-                      placeholder="Describe tu proyecto o necesidad"
-                      rows={5}
+                      placeholder="Describe tu proyecto o consulta..."
+                      rows={4}
                     />
                   </div>
 

@@ -319,18 +319,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Video Demostración Section - Added */}
-      <section className="py-20 bg-neutral-light/30">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-heading">Cerramientos en Acción</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Mira una muestra de cómo instalamos nuestros cerramientos, garantizando calidad y seguridad en cada paso.
+      {/* Proceso Artesanal en Acción -> Replaced with YouTube Embed */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 font-heading">
+            Nuestro Proceso Artesanal en Acción
+          </h2>
+          <p className="text-center text-lg text-neutral/80 max-w-2xl mx-auto mb-12">
+            Mira cómo nuestros artesanos expertos transforman el alambre en soluciones duraderas y confiables.
           </p>
-          <div className="aspect-video max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
-            <video controls muted className="w-full h-full object-cover" poster="/Malla6.jpg">
-              <source src="/CerramientoVideo1.mp4" type="video/mp4" />
-              Tu navegador no soporta el elemento de video.
-            </video>
+          <div className="relative aspect-video max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
+            {/* YouTube Iframe Embed */}
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/a6N4uMUi5yg"
+              title="Proceso Artesanal Fabrimallas"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>

@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -281,6 +281,7 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetTitle className="sr-only">Menú Principal</SheetTitle>
               <nav className="flex flex-col gap-4 mt-8">
                 <Link href="/" className="text-lg font-medium py-2 hover:text-primary" onClick={() => setIsOpen(false)}>
                   Inicio

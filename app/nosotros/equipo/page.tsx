@@ -40,9 +40,9 @@ export default function EquipoPage() {
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
                   src="/Fachada1.jpg"
-                  alt="Equipo Fabrimallas"
+                  alt="Fachada de Fabrimallas"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
             </div>
@@ -394,11 +394,11 @@ export default function EquipoPage() {
             trabajo artesanal. Si estás interesado en formar parte de nuestro equipo, envíanos tu hoja de vida.
           </p>
           <a
-            href="mailto:rrhh@fabrimallas.com"
+            href="mailto:fabrimallas2011@hotmail.com"
             className="inline-flex items-center bg-white text-primary px-6 py-3 rounded-md font-medium hover:bg-white/90 transition-colors"
           >
             <Mail className="mr-2 h-5 w-5" />
-            Enviar CV a rrhh@fabrimallas.com
+            Enviar CV a fabrimallas2011@hotmail.com
           </a>
         </div>
       </section>
