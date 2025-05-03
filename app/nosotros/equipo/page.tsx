@@ -209,6 +209,23 @@ export default function EquipoPage() {
                 <p className="text-primary font-medium mb-2">Técnico en Puertas</p>
               </CardContent>
             </Card>
+
+            {/* Added: Carlos Marquez Olaya */}
+            <Card className="border-none shadow-lg overflow-hidden">
+              <div className="relative h-64 w-full bg-neutral-light/50 flex items-center justify-center">
+                <Image
+                  src="/logo fm.png" // Placeholder image
+                  alt="Carlos Marquez Olaya - Soldador Certificado"
+                  width={100}
+                  height={100}
+                  className="object-contain"
+                />
+              </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="text-lg font-bold mb-1 font-heading">Carlos Marquez Olaya</h3>
+                <p className="text-primary font-medium mb-2">Soldador Certificado</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
