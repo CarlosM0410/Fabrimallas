@@ -67,10 +67,10 @@ export default function ProyectoDetallePage({ params }: { params: { slug: string
       <section className="py-12">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="descripcion" className="w-full">
-            <TabsList className="grid grid-cols-1 md:grid-cols-3 mb-8">
-              <TabsTrigger value="descripcion">Descripcion del Proyecto</TabsTrigger>
-              <TabsTrigger value="desafios">Desafios y Soluciones</TabsTrigger>
-              <TabsTrigger value="resultados">Resultados</TabsTrigger>
+            <TabsList className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-8 h-auto bg-transparent p-0">
+              <TabsTrigger value="descripcion" className="rounded-lg border-2 border-neutral/20 bg-white px-4 py-3 text-sm font-bold shadow-sm data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary data-[state=active]:shadow-md hover:border-primary/60 transition-colors">Descripcion del Proyecto</TabsTrigger>
+              <TabsTrigger value="desafios" className="rounded-lg border-2 border-neutral/20 bg-white px-4 py-3 text-sm font-bold shadow-sm data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary data-[state=active]:shadow-md hover:border-primary/60 transition-colors">Desafios y Soluciones</TabsTrigger>
+              <TabsTrigger value="resultados" className="rounded-lg border-2 border-neutral/20 bg-white px-4 py-3 text-sm font-bold shadow-sm data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary data-[state=active]:shadow-md hover:border-primary/60 transition-colors">Resultados</TabsTrigger>
             </TabsList>
 
             <TabsContent value="descripcion" className="p-6 bg-neutral-light/20 rounded-lg">
