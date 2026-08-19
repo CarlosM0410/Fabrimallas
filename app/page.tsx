@@ -127,11 +127,11 @@ export default function Home() {
           </h2>
 
           <Tabs defaultValue="artesania" className="w-full">
-            <TabsList className="grid grid-cols-2 md:grid-cols-4 mb-8">
-              <TabsTrigger value="artesania">Artesanía en Gaviones</TabsTrigger>
-              <TabsTrigger value="malla">Malla Eslabonada</TabsTrigger>
-              <TabsTrigger value="servicio">Servicio Llave en Mano</TabsTrigger>
-              <TabsTrigger value="regional">Enfoque Regional</TabsTrigger>
+            <TabsList className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8 h-auto bg-transparent p-0">
+              <TabsTrigger value="artesania" className="rounded-lg border-2 border-neutral/20 bg-white px-4 py-3 text-sm font-bold shadow-sm data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary data-[state=active]:shadow-md hover:border-primary/60 transition-colors">Artesanía en Gaviones</TabsTrigger>
+              <TabsTrigger value="malla" className="rounded-lg border-2 border-neutral/20 bg-white px-4 py-3 text-sm font-bold shadow-sm data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary data-[state=active]:shadow-md hover:border-primary/60 transition-colors">Malla Eslabonada</TabsTrigger>
+              <TabsTrigger value="servicio" className="rounded-lg border-2 border-neutral/20 bg-white px-4 py-3 text-sm font-bold shadow-sm data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary data-[state=active]:shadow-md hover:border-primary/60 transition-colors">Servicio Llave en Mano</TabsTrigger>
+              <TabsTrigger value="regional" className="rounded-lg border-2 border-neutral/20 bg-white px-4 py-3 text-sm font-bold shadow-sm data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary data-[state=active]:shadow-md hover:border-primary/60 transition-colors">Enfoque Regional</TabsTrigger>
             </TabsList>
 
             <TabsContent value="artesania" className="p-6 bg-neutral-light/20 rounded-lg">
