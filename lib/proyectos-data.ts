@@ -21,7 +21,7 @@ export const proyectos: Proyecto[] = [
     id: 1,
     slug: "cerramiento-industrial-zona-franca",
     title: "Cerramiento Industrial Zona Franca",
-    location: "Cali, Valle del Cauca",
+    location: "Andalucia, Valle del Cauca",
     category: "Cerramiento Industrial",
     sector: "Industria",
     imageSrc: "/PuertaAlmacenFinca2.jpg",
