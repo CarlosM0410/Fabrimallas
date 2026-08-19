@@ -19,7 +19,7 @@ export interface Proyecto {
 export const proyectos: Proyecto[] = [
   {
     id: 1,
-    slug: "Cerramiento Estructural Finca Exportadora de Mango",
+    slug: "cerramiento-estructural-finca-mango",
     title: "Cerramiento Estructural Finca Exportadora de Mango",
     location: "Andalucia, Valle del Cauca",
     category: "Cerramiento Industrial",
